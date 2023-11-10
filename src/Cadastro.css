@@ -18,6 +18,7 @@ h1 {
 }
 .cadastro-clientes {
     display: flex;
+    background-color: #F7EFE5;
 }
 
 .cadastro-esquerda { flex-direction: column; }
@@ -99,4 +100,12 @@ fieldset {
 }
 button:hover {
     background-color:#C3ACD0;
+}
+
+@media (max-width: 950px) {
+    .cadastro-clientes {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
 }
