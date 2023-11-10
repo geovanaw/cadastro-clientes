@@ -1,34 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7EFE5;
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 20px;
 }
-
-.cadastro {
-    width: 100vw;
-    height: 100vh;
-    background-color: #7af1eb;
-}
-
 .cadastro-clientes {
     display: flex;
-    margin: auto;
-    padding: auto;
 }
 
-.cadastro-clientes div {
-    width: 50%;
+.cadastro-esquerda { flex-direction: column; }
+
+.cadastro-esquerda, .cadastro-direita {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.cadastro-identificacao  {
+    display: grid;
+    grid-template-columns: 2;
+    margin: 20px;
+}
+
+.cadastro-clientes label {
+    display: flex;
+    flex-direction: column;
 }
 
 
 h3, label, .infos {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+}
+
+.data {
+    width: 120px;
+}
+
+input, select, textarea, button {
+    border-radius: 10px;
+    border-color: #7743DB;   
 }
 
 input, select {
@@ -39,36 +68,35 @@ input::placeholder {
     padding-left: 10px;
 }
 
-.grande {
-    width: 300px;
-    height: 36px;
-    flex-shrink: 0;
-}
 
-.medio {
-    width: 199px;
-    height: 36px;
-    flex-shrink: 0;
-}
-
-.medio-email {
-    width: 260px;
-    height: 36px;
-}
 .pequeno, select {
-    width: 100px;
+    width: 110px;
     height: 36px;
     flex-shrink: 0;
 }
 
 .infos {
-    width: 300px;
+    width: 400px;
     height: 102px;
     flex-shrink: 0;
 }
 
 button {
-    cursor: pointer;
-    width: 100px;
+    margin-left: 10px;
+    width: 150px;
     height: 50px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+label {
+    font-style:italic;
+}
+
+fieldset {
+    padding: 10px;
+    border-color: #C3ACD0;
+}
+button:hover {
+    background-color:#C3ACD0;
 }
